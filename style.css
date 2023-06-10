@@ -1,0 +1,685 @@
+ /* Apply a transition to all elements */
+ * {
+   transition: all 0.3s ease;
+   user-select: none;
+ }
+
+ /* General styles */
+ body {
+   font-family: Arial, sans-serif;
+   margin: 0;
+   padding: 0;
+   /* background-size: cover; */
+ }
+
+ main {
+   background-image: url(./Images/bAckGround_pictrure.png);
+   padding-top: 50px;
+ }
+
+ a {
+   color: #0077c0;
+   text-decoration: none;
+ }
+
+ ul {
+   list-style: none;
+   margin: 0;
+   padding: 0;
+ }
+
+ /* Header styles */
+
+ header {
+   background-color: #f2f2f2;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   height: 100px;
+ }
+
+ .calligraphy-title {
+   font-family: serif;
+   font-size: 40px;
+ }
+
+ .calligraphy-info {
+   font-size: 16px;
+   margin-top: -10px;
+   margin-left: 70px;
+ }
+
+ nav {
+   margin-top: 20px;
+ }
+
+ nav ul {
+   display: flex;
+   justify-content: center;
+ }
+
+ nav li {
+   margin-right: 20px;
+   margin-inline: 20px;
+ }
+
+ nav a {
+   color: #333;
+   font-size: 1.2rem;
+   text-decoration: none;
+   transition: all 0.2s ease-in-out;
+ }
+
+ nav i {
+   margin-right: 8px;
+ }
+
+ nav a:hover {
+   color: #0077c0;
+ }
+
+ /* header section end */
+
+
+
+
+ /* Main styles */
+
+ /* main {
+   max-width: 800px;
+   margin: 0 auto;
+   padding: 40px 20px;
+ } */
+
+ .intro {
+   text-align: center;
+   background-color: #f2f2f2;
+   border-radius: 30px;
+   margin: 20px 20px 0 20px;
+   height: auto;
+ }
+
+
+ /* 
+ main {
+   padding: 20px;
+ }  */
+
+ .intro h2 {
+   font-size: 3rem;
+   font-family: serif;
+ }
+
+
+
+ .features {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+
+ .features-container {
+   width: 80%;
+   background-color: #f2f2f2;
+   border-radius: 30px;
+   margin: 40px 20px 0 20px;
+   text-align: left;
+   text-align: center;
+ }
+
+ .features h2 {
+   font-size: 37px;
+   font-family: serif;
+ }
+
+ .features p {
+   width: 100%;
+ }
+
+ .call-to-action {
+   /* background-color: #f2f2f2; */
+   padding: 20px;
+   text-align: center;
+   background-image: url(./Images/bAckGround_pictrure.png);
+   background-size: cover;
+   background-position: center;
+   height: auto;
+ }
+
+ .call-to-action h2 {
+   font-size: 35px;
+ }
+
+ .call-to-action p {
+   color: black;
+ }
+
+ .call-to-action form {
+   display: flex;
+   justify-content: center;
+   margin-top: 20px;
+ }
+
+ .call-to-action input[type="email"] {
+   border: none;
+   border-radius: 5px;
+   font-size: 1.2rem;
+   padding: 0px 20px;
+   height: 40px;
+   width: 350px;
+   margin-right: 5px;
+ }
+
+ .call-to-action input[type="email"]::placeholder {
+   color: rgb(167, 167, 167);
+ }
+
+ .call-to-action button[type="submit"] {
+   background-color: #4CAF50;
+   border: none;
+   border-radius: 5px;
+   color: white;
+   font-size: 1.2rem;
+   height: 40px;
+   width: 100px;
+
+ }
+
+
+
+
+
+
+ /* Common styles for all sections */
+ section {
+   padding: 50px;
+ }
+
+ section h2 {
+   font-size: 36px;
+   color: #333;
+   margin-bottom: 20px;
+ }
+
+ section p {
+   font-size: 18px;
+   color: #555;
+   line-height: 1.5;
+ }
+
+
+
+
+ /* Types Of Calligraphy Start */
+ .services {
+   background-color: #f2f2f2;
+   border-radius: 50px;
+   margin: 40px 20px 0px 20px;
+   height: 790px;
+ }
+
+ .services .container {
+   padding-bottom: 40px;
+ }
+
+ .services .service-item {
+   margin-bottom: 30px;
+   flex: 0 0 33.33%;
+   max-width: 33.33%;
+ }
+
+ .service-item-inner img {
+   margin-bottom: 10px;
+ }
+
+ .row h2 {
+   font-family: serif;
+   font-size: 53px;
+   text-align: center;
+ }
+
+ .services .service-item .service-item-inner {
+   background-color: var(--bg-black-100);
+   border: 1px solid var(--bg-black-50);
+   border-radius: 10px;
+   padding: 30px 15px;
+   text-align: center;
+   transition: all 0.3s ease;
+ }
+
+ .services .service-item .service-item-inner:hover {
+   box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
+ }
+
+ .services .service-item .service-item-inner .icon {
+   height: 60px;
+   width: 60px;
+   border-radius: 50%;
+   display: block;
+   margin: 0 auto 30px;
+   text-align: center;
+   transition: all 0.3s ease;
+ }
+
+ .services .service-item .service-item-inner .icon .fa {
+   font-size: 40px;
+   line-height: 60px;
+   color: var(--skin-color);
+   transition: all 0.3s ease;
+ }
+
+ .services .service-item .service-item-inner:hover .icon {
+   background: var(--skin-color);
+ }
+
+ .services .service-item .service-item-inner:hover .icon .fa {
+   font-size: 25px;
+   color: #ffffff;
+ }
+
+ .services .service-item .service-item-inner h4 {
+   font-size: 18px;
+   margin-bottom: 15px;
+   color: var(--text-black-900);
+   font-weight: 700;
+   text-transform: capitalize;
+ }
+
+ .services .service-item .service-item-inner p {
+   font-size: 16px;
+   color: var(--text-black-700);
+   line-height: 25px;
+ }
+
+ /* Types Of Calligraphy End */
+
+
+ .component-heading {
+   margin-bottom: 20px;
+   text-align: center;
+   font-family: serif;
+   font-size: 53px;
+ }
+
+ /* section for forms and style */
+
+ .forms-and-styles {
+   background-color: #f2f2f2;
+   padding: 50px;
+   margin: 100px 20px 0px 20px;
+   border-radius: 50px;
+ }
+
+ .forms-and-styles h2 {
+   color: #333;
+   margin-bottom: 20px;
+   text-align: center;
+   font-family: serif;
+   font-size: 53px;
+ }
+
+ .forms-and-styles p {
+   font-size: 18px;
+   color: #555;
+   line-height: 1.5;
+ }
+
+ .forms-and-styles ul {
+   list-style: none;
+   padding: 0;
+   margin: 0;
+ }
+
+ .forms-and-styles li {
+   font-size: 16px;
+   color: #777;
+   margin-bottom: 10px;
+ }
+
+ /* .forms-img-container {
+  height: 150px;
+  width: 150px;
+  border-radius: 10px;
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6zVK5lXNWuCc40u89rqtV9Ej6GqDAdNXA7Q&usqp=CAU);
+  background-position: center;
+
+} */
+
+
+
+
+
+
+
+
+ /* section for letter and fonts */
+
+ .letters-and-fonts {
+   background-color: #f2f2f2;
+   border-radius: 50px;
+   margin: 90px 20px 100px 20px;
+ }
+
+ .letters-and-fonts h2 {
+   color: #333;
+   margin-bottom: 20px;
+ }
+
+ .letters-and-fonts p {
+   font-size: 18px;
+   color: #555;
+   line-height: 1.5;
+ }
+
+ .letters-and-fonts ul {
+   list-style: none;
+   padding: 0;
+   margin: 0;
+ }
+
+ .letters-and-fonts li {
+   font-size: 16px;
+   color: #777;
+   margin-bottom: 10px;
+   line-height: 1.5;
+ }
+
+ .letters-and-fonts li strong {
+   font-weight: bold;
+ }
+
+
+
+
+
+
+
+
+
+
+ /* section for .calligraphy-gallery */
+
+
+ .calligraphy-gallery {
+   background-color: #fff;
+   padding: 50px;
+ }
+
+ .calligraphy-gallery h2 {
+   color: #333;
+   margin-bottom: 5px;
+ }
+
+ .calligraphy-gallery p {
+   font-size: 17px;
+   color: #555;
+   line-height: 1.5;
+   text-align: center;
+ }
+
+ .gallery {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   margin-top: 30px;
+ }
+
+ .gallery a {
+   display: block;
+   margin: 10px;
+   text-decoration: none;
+   position: relative;
+ }
+
+ .gallery img {
+   width: 400px;
+   height: 300px;
+   box-shadow: 3px 3px 13px rgba(0, 0, 0, 0.2);
+   border-radius: 30px;
+ }
+
+ .gallery .caption {
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   width: 100%;
+   height: 80px;
+   padding: 10px;
+   color: #fff;
+   background-color: rgba(0, 0, 0, 0.6);
+   font-size: 20px;
+   text-align: center;
+   opacity: 0;
+   border-bottom-left-radius: 30px;
+   border-bottom-right-radius: 30px;
+   transition: opacity 0.2s ease-in-out;
+ }
+
+ .gallery a:hover .caption {
+   opacity: 1;
+ }
+
+ .gallery-btn-container {
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   margin-top: 20px;
+ }
+
+ .gallery-btn {
+   border: none;
+   background-color: #0077c0;
+   color: white;
+   border-radius: 10px;
+   padding: 8px 15px;
+ }
+
+ .gallery-btn:hover {
+   opacity: 0.8;
+ }
+
+
+
+ /* section for feedback */
+
+ .feedback {
+   background-color: #f2f2f2;
+
+ }
+
+ .feedback h2 {
+   font-size: 36px;
+   color: #333;
+   margin-bottom: 20px;
+ }
+
+ .feedback form {
+   display: flex;
+   flex-direction: column;
+   max-width: 600px;
+   margin: 0 auto;
+ }
+
+ .feedback label {
+   font-size: 18px;
+   color: #555;
+   margin-bottom: 10px;
+ }
+
+ .feedback input,
+ .feedback textarea {
+   padding: 10px;
+   font-size: 18px;
+   border: none;
+   border-radius: 5px;
+   margin-bottom: 20px;
+ }
+
+ .feedback input:focus,
+ .feedback textarea:focus {
+   outline: none;
+   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+ }
+
+ .feedback button {
+   background-color: #333;
+   color: #fff;
+   border: none;
+   border-radius: 5px;
+   padding: 10px 20px;
+   font-size: 20px;
+   cursor: pointer;
+   transition: background-color 0.2s ease-in-out;
+ }
+
+ .feedback button:hover {
+   background-color: #555;
+ }
+
+
+ /* section for footer */
+
+
+
+ footer {
+   background-color: #333;
+   color: #fff;
+   padding: 10px;
+   text-align: center;
+ }
+
+ /* Define color variables */
+ /*:root {
+   /*--primary-color: #007bff; /* blue */
+ /* --secondary-color: #6c757d; /*gray/*
+   /* --accent-color: #ffc107; /*yellow */
+ /* --text-color: #333; /*black */
+ /* } 
+ 
+ /* Use color variables in styles */
+ /* body {
+   background-color: var(--secondary-color);
+   color: var(--text-color);
+ }
+ 
+ h1, h2, h3 {
+   color: var(--primary-color);
+ }
+ 
+ a {
+   color: var(--accent-color);
+ } */
+
+
+
+
+
+
+
+ /* contact-section */
+ .contact {
+   background-color: #F3F4F6;
+ }
+
+ .contact-info {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(160px, auto));
+   gap: 3rem;
+ }
+
+ .first-info img {
+   width: 140px;
+   height: 130px;
+ }
+
+ .second-info {
+   margin-top: 40px;
+ }
+
+ .third-info {
+   margin-top: 40px;
+ }
+
+ .fourth-info {
+   margin-top: 40px;
+ }
+
+ .contact-info h4 {
+   color: #212529;
+   font-size: 16px;
+   text-transform: uppercase;
+   margin-bottom: 10px;
+ }
+
+ .contact-info p {
+   color: #565656;
+   font-size: 14px;
+   font-weight: 400;
+   text-transform: capitalize;
+   line-height: 1.5;
+   margin-bottom: 10px;
+   cursor: pointer;
+   transition: all .42s;
+ }
+
+ .contact-info p:hover {
+   color: #EE1c47;
+ }
+
+ .social-icon i {
+   color: #565656;
+   margin-right: 10px;
+   font-size: 20px;
+   transition: all .42s;
+ }
+
+ .social-icon i:hover {
+   transform: scale(1.3);
+   color: rgba(109, 78, 109, 0.685);
+ }
+
+ .end-text {
+   background-color: #edfff1;
+   text-align: center;
+   padding: 20px;
+ }
+
+ .end-text p {
+   color: #111;
+   text-transform: capitalize;
+ }
+
+ /* media queries */
+
+ @media screen and (max-width: 939px) {
+   .logo {
+     display: none;
+   }
+ }
+
+
+ @media screen and (max-width: 800px) {
+   .navbar-container-2 {
+     justify-content: center;
+     position: absolute;
+     /* text-transform: var(-50% -50%); */
+   }
+
+   .navbar-container-2 ul {
+     display: flex;
+     flex-direction: column;
+   }
+
+   .navbar-container-2 li {
+     margin-block: 10px;
+     text-align: center;
+
+   }
+
+   .navbar-container-1 {
+     display: none;
+   }
+     header {
+     height: 300px;
+   }
+ }
